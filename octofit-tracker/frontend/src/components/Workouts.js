@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/workouts')
+    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

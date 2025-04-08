@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/users')
+    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

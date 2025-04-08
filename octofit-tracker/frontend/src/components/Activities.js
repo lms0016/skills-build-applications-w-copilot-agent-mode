@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/activities')
+    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);

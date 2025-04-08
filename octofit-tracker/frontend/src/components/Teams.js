@@ -4,7 +4,7 @@ function Teams() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/teams')
+    fetch('https://crispy-disco-pj6x4gp749hrq55-8000.app.github.dev/api/teams/')
       .then(response => response.json())
       .then(data => setTeams(data));
   }, []);
